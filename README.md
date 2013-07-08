@@ -10,16 +10,17 @@ jQuery plugin to create responsive carousels
 
         <div class="carusel-slides">
 
-          <?php foreach ($rows as $id => $row): ?>
-            <div class="row"><?php print $row; ?></div>
-          <?php endforeach; ?>
+          <div class="row"><img src="image.png"></div>
+          <div class="row"><img src="image.png"></div>
+          <div class="row"><img src="image.png"></div>
+          <div class="row"><img src="image.png"></div>
 
         </div>
 
       </div>
 
       <div class="pager">
-        <span class="pager-btn preview"><< Preview</span>
-        <span class="pager-btn next">Next >></span>
+        <span class="preview"><< Preview</span>
+        <span class="next">Next >></span>
       </div>
     </div>
