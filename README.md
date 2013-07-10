@@ -26,6 +26,6 @@ jQuery plugin to create responsive carousels
 **Initialization**  
   
     $(document).ready(function(){
-      $('.carusel-wrapper').responsiveCarousel();
+      $('.carusel-wrapper').responsiveCarousel({duration:1500});
     });  
 

@@ -9,6 +9,7 @@
       carusel_slides: 0,
       slide_average_width: 0,
       carusel_increase_pager: 0,
+      duration: 1500,
     }, options );
     
     // Bind resize window
@@ -81,11 +82,11 @@
         action_operator > 0
       ){
         $(settings.selector).find('.carusel-slides').animate(
-          {left : -(settings.carusel_slides - settings.carusel_increase_pager)}, 1500);
+          {left : -(settings.carusel_slides - settings.carusel_increase_pager)}, settings.duration);
       }else if(action == 'next' && next <= (settings.carusel_slides  *-1) ){
-        $(settings.selector).find('.carusel-slides').animate({left : 0}, 1500);
+        $(settings.selector).find('.carusel-slides').animate({left : 0}, settings.duration);
       }else{
-        $(settings.selector).find('.carusel-slides').animate({left : next}, 1500);
+        $(settings.selector).find('.carusel-slides').animate({left : next}, settings.duration);
       }
 
     }
